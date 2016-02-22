@@ -17,6 +17,10 @@ Modded post run template of [generators-redux](https://github.com/banderson/gene
   - backend:
     - eslint-watch for backend continuous linting
 
+###Todos:
+
+- specs: mocha, and karma
+- jade: layout template speration / reusability
 
 ## Running your project
 
