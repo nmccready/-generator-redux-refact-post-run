@@ -1,0 +1,51 @@
+{
+  "name": "generator-redux-post-run",
+  "version": "0.1.0",
+  "scripts": {
+    "serve": "DEBUG=true node ./backend/server.js",
+    "lint": "./node_modules/.bin/esw -w ./backend/*.js ./backend/**/*.js",
+    "prod": "webpack -p --config webpack.production.js",
+    "build": "webpack -p",
+    "start": "./scripts/start",
+    "start:prod": "npm run prod & npm run serve & npm run lint"
+  },
+  "dependencies": {
+    "babel-core": "^6.3.15",
+    "es6-promise": "^3.1.2",
+    "jade": "1.11.0",
+    "lodash": "^4.5.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.4",
+    "redux-devtools": "^2.1.5",
+    "redux-thunk": "^1.0.0",
+    "whatwg-fetch": "^0.11.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.3.15",
+    "babel-eslint": "^5.0.0-beta4",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-react-hmre": "^1.0.0",
+    "babel-preset-stage-0": "^6.3.13",
+    "cross-env": "^1.0.6",
+    "css-loader": "^0.23.1",
+    "cssnext-loader": "1.X",
+    "eslint": "1.X",
+    "eslint-loader": "1.3.0",
+    "eslint-plugin-babel": "^3.0.0",
+    "eslint-plugin-react": "^3.11.3",
+    "eslint-watch": "2.1.8",
+    "eventsource-polyfill": "^0.9.6",
+    "express": "^4.13.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "path": "^0.12.7",
+    "style-loader": "^0.13.0",
+    "stylus-loader": "1.5.1",
+    "webpack": "^1.0.0",
+    "webpack-dev-middleware": "^1.5.1",
+    "webpack-hot-middleware": "^2.7.1"
+  }
+}

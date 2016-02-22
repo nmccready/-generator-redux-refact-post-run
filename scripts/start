@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+trap 'kill -TERM $PID1' TERM INT
+trap 'kill -TERM $PID2' TERM INT
+npm run serve &
+PID1=$!
+echo ==== Lint ====
+npm run lint &
+PID2=$!
+
+wait $PID1
+wait $PID2
