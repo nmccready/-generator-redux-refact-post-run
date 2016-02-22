@@ -1,5 +1,22 @@
 # generator-redux-post-run
 
+Modded post run template of [generators-redux](https://github.com/banderson/generator-redux/tree/master/generators/app/templates).
+
+####Mods:
+
+- jade
+- stylus
+- explicit backend and frontend code context
+  - pros:
+    - no guessing as to what code belongs to where
+  - negs:
+    - common code will require a common directory if the convention is followed. Otherwise the code would just go in the old `./js` or alternativley `./src`.
+- eslint
+  - frontend:
+    - eslint-loader into babel transpile
+  - backend:
+    - eslint-watch for backend continuous linting
+
 
 ## Running your project
 
